@@ -379,6 +379,16 @@ td b, th b { color: var(--navy); }
 .inline-row .field { margin-bottom: 0; flex: 1 1 160px; }
 .mini { font-size: 13px; color: var(--muted); }
 .asm-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
+/* 需求调研表：题目下未包裹 .field 的文本域 / 输入框统一样式 */
+.asm-sec textarea, .asm-sec input[type="text"], .asm-sec select {
+  width: 100%; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px;
+  font-size: 15px; font-family: inherit; color: var(--ink); background: #fff;
+  transition: border-color .2s, box-shadow .2s; margin-top: 2px;
+}
+.asm-sec textarea { resize: vertical; min-height: 104px; line-height: 1.6; }
+.asm-sec textarea:focus, .asm-sec input[type="text"]:focus, .asm-sec select:focus {
+  outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(27,110,143,.12);
+}
 
 /* ---------- EDC 优势板块 ---------- */
 .edc-section { background: linear-gradient(135deg, #0F4761, #1B6E8F); color: #fff; padding: 72px 0; }
