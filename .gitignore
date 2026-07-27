@@ -10,3 +10,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.swp
+
+# docs/ 为源参考文件，不纳入网站版本库
+docs/
