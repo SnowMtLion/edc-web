@@ -175,7 +175,13 @@ section { padding: 84px 0; }
 
 /* 优势 */
 .adv { text-align: left; }
-.adv .ic { background: linear-gradient(135deg, var(--navy), var(--teal)); color: #fff; }
+.adv .ic {
+  width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--navy), var(--teal)); color: #fff; font-size: 26px;
+  margin-bottom: 16px; box-shadow: 0 8px 18px rgba(15,71,97,.22);
+  transition: transform .25s ease;
+}
+.adv:hover .ic { transform: scale(1.07) rotate(-3deg); }
 .adv h3 { font-size: 18px; margin: 0 0 8px; }
 .adv p { font-size: 14.5px; }
 
