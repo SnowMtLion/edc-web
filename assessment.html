@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>疾病风险预测模型 · 需求调研表 | 梅斯医学</title>
+<meta name="description" content="梅斯医学疾病风险预测模型信息征集表（2026 版修订）：售前评估您的研究问题、结局定义、样本量、变量质量与数据就绪度，按数据就绪度分流服务路径。">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="mark">梅</span>
+      <span class="name">梅斯医学<small>数据管理与生物统计</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我们</a>
+      <a href="services.html">产品服务</a>
+      <a href="assessment.html" class="active">需求调研</a>
+      <a href="contact.html">联系我们</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== 子页 Hero ===== -->
+<section class="hero" style="padding:64px 0 56px">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--gold-soft)">需求调研表</span>
+    <h1 style="font-size:clamp(26px,3.4vw,40px)">疾病风险预测模型<br>信息征集表（2026 版修订）</h1>
+    <p class="lead" style="max-width:760px">疾病预测模型可作为销售切入点。请按实际情况填写下表，我们将依据研究问题、结局定义、样本量、变量质量、数据完整性与验证设计，按<b>数据就绪度</b>为您分流服务路径。</p>
+  </div>
+</section>
+
+<!-- ===== 表单 ===== -->
+<section>
+  <div class="container">
+    <div class="asm-intro reveal">
+      <h3>填写说明</h3>
+      <p>临床预测模型可用于风险与获益评估，但模型可行性取决于研究问题、结局定义、样本量、变量质量、数据完整性和验证设计。请务必按实际情况填写；如资料不足，后续需结合脱敏数据样例或字段清单复核。</p>
+      <p><b>服务路径：</b>数据质量符合要求 → 预测模型 / 统计分析 / 成果支持；数据不足 → 研究方案设计 / 数据治理 / EDC 搭建。</p>
+    </div>
+
+    <form class="intake-form" id="assessmentForm" novalidate>
+      <div class="form-success" id="formSuccess">✓ 需求评估表已提交！我们的数统顾问将在 24 小时内与您联系，结合脱敏数据样例或字段清单进一步复核。</div>
+
+      <!-- 一、客户与项目基本信息 -->
+      <div class="asm-sec reveal">
+        <h3><span class="idx">一</span>客户与项目基本信息</h3>
+        <div class="q">
+          <div class="qlabel"><span class="qn">·</span>姓名 / 单位 / 职务</div>
+          <div class="inline-row">
+            <div class="field"><input type="text" name="name" placeholder="姓名"></div>
+            <div class="field"><input type="text" name="org" placeholder="单位"></div>
+            <div class="field"><input type="text" name="title" placeholder="职务"></div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">·</span>联系方式 / 科室</div>
+          <div class="inline-row">
+            <div class="field"><input type="text" name="contact" placeholder="电话 / 邮箱"></div>
+            <div class="field"><input type="text" name="dept" placeholder="科室"></div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">·</span>填表日期 / 期望交付时间</div>
+          <div class="inline-row">
+            <div class="field"><input type="text" name="fill_date" placeholder="____年__月__日"></div>
+            <div class="field"><input type="text" name="deliver" placeholder="期望交付时间"></div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">·</span>客户类型（可多选）</div>
+          <div class="opts">
+            <label><input type="checkbox" name="cust_type" value="药企">药企</label>
+            <label><input type="checkbox" name="cust_type" value="CRO">CRO</label>
+            <label><input type="checkbox" name="cust_type" value="医院/科室">医院 / 科室</label>
+            <label><input type="checkbox" name="cust_type" value="医生个人">医生个人</label>
+            <label><input type="checkbox" name="cust_type" value="医疗器械企业">医疗器械企业</label>
+            <label><input type="checkbox" name="cust_type" value="其他">其他</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">·</span>预算范围</div>
+          <div class="opts">
+            <label><input type="radio" name="budget" value="3万以内">3 万以内</label>
+            <label><input type="radio" name="budget" value="3-5万">3–5 万</label>
+            <label><input type="radio" name="budget" value="5-10万">5–10 万</label>
+            <label><input type="radio" name="budget" value=">10万">&gt;10 万</label>
+            <label><input type="radio" name="budget" value="待确认">待确认</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">·</span>是否已有课题 / 基金</div>
+          <div class="opts">
+            <label><input type="radio" name="fund" value="无">无</label>
+            <label><input type="radio" name="fund" value="院内课题">院内课题</label>
+            <label><input type="radio" name="fund" value="市/省/国家课题">市 / 省 / 国家课题</label>
+            <label><input type="radio" name="fund" value="企业合作">企业合作</label>
+            <label><input type="radio" name="fund" value="其他">其他</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">·</span>项目来源</div>
+          <div class="opts">
+            <label><input type="radio" name="src" value="现有C端转介">现有 C 端转介</label>
+            <label><input type="radio" name="src" value="数统直客">数统直客</label>
+            <label><input type="radio" name="src" value="历史项目复用">历史项目复用</label>
+            <label><input type="radio" name="src" value="其他">其他</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 二、疾病、结局与研究目标 -->
+      <div class="asm-sec reveal">
+        <h3><span class="idx">二</span>疾病、结局与研究目标</h3>
+        <div class="q">
+          <div class="qlabel"><span class="qn">1</span>拟研究疾病 / 并发症 / 预后结局</div>
+          <textarea name="q1" rows="2" placeholder="请填写一个主要疾病、并发症或临床结局；如有多个方向，建议分别填写评估表。"></textarea>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">2</span>核心临床问题</div>
+          <textarea name="q2" rows="2" placeholder="例如：识别高风险人群、预测疾病发生、预测复发/并发症、预测预后/生存、预测治疗响应或验证既有模型。"></textarea>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">3</span>主要研究目的（可多选）</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="goal" value="A">A. 危险因素与发生风险预测</label>
+            <label><input type="checkbox" name="goal" value="B">B. 预后 / 生存预测</label>
+            <label><input type="checkbox" name="goal" value="C">C. 治疗响应预测</label>
+            <label><input type="checkbox" name="goal" value="D">D. 既有模型外部验证</label>
+            <label><input type="checkbox" name="goal" value="E">E. 模型更新 / 优化</label>
+            <label><input type="checkbox" name="goal" value="F">F. 其他</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">4</span>主要 / 次要结局定义</div>
+          <textarea name="q4" rows="2" placeholder="请写明结局判定标准、观察窗口、测量时间点、是否存在竞争结局或失访。"></textarea>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">5</span>研究类型与病例来源</div>
+          <div class="opts" style="margin-bottom:10px">
+            <label><input type="checkbox" name="rtype" value="回顾性">回顾性</label>
+            <label><input type="checkbox" name="rtype" value="前瞻性">前瞻性</label>
+            <label><input type="checkbox" name="rtype" value="队列">队列</label>
+            <label><input type="checkbox" name="rtype" value="病例对照">病例对照</label>
+            <label><input type="checkbox" name="rtype" value="横断面">横断面</label>
+            <label><input type="checkbox" name="rtype" value="干预研究">干预研究</label>
+            <label><input type="checkbox" name="rtype" value="模型验证/更新">模型验证 / 更新</label>
+          </div>
+          <input type="text" name="case_src" placeholder="病例来源及时间范围">
+        </div>
+      </div>
+
+      <!-- 三、研究对象、样本量与中心情况 -->
+      <div class="asm-sec reveal">
+        <h3><span class="idx">三</span>研究对象、样本量与中心情况</h3>
+        <div class="q">
+          <div class="qlabel"><span class="qn">6</span>目标病例数 / 年</div>
+          <input type="text" name="q6" placeholder="各疾病或干预人群每年可获得的病例数量（例/年）">
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">7</span>对照 / 非事件组</div>
+          <textarea name="q7" rows="2" placeholder="请写明对照人群特征及数量；对照应与研究问题和结局定义一致。"></textarea>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">8</span>预计纳入既往病例年限 / 随访期</div>
+          <input type="text" name="q8" placeholder="例：2021–2025，共 5 年；前瞻性项目请填写计划随访时间点和总周期。">
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">9</span>入选与排除标准</div>
+          <textarea name="q9" rows="2" placeholder="尽量列出诊断标准、年龄、治疗/暴露、关键时间条件及排除原因。"></textarea>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">10</span>多中心情况与协调责任</div>
+          <div class="opts" style="margin-bottom:10px">
+            <label><input type="radio" name="multi" value="单中心">单中心</label>
+            <label><input type="radio" name="multi" value="多中心">多中心，约（ ）家</label>
+          </div>
+          <input type="text" name="coord" placeholder="协调方（数统侧主要负责数据标准、治理、分析、模型与报告）">
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">11</span>伦理、注册与知情同意</div>
+          <div class="opts" style="margin-bottom:10px">
+            <label><input type="radio" name="ethics" value="已完成">已完成</label>
+            <label><input type="radio" name="ethics" value="进行中">进行中</label>
+            <label><input type="radio" name="ethics" value="未涉及">未涉及</label>
+            <label><input type="radio" name="ethics" value="待确认">待确认</label>
+          </div>
+          <input type="text" name="ethics_note" placeholder="说明">
+        </div>
+      </div>
+
+      <!-- 四、数据来源、提取与数据就绪度 -->
+      <div class="asm-sec reveal">
+        <h3><span class="idx">四</span>数据来源、提取与数据就绪度</h3>
+        <div class="q">
+          <div class="qlabel"><span class="qn">12</span>数据来源（可多选）</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="dsrc" value="HIS/EMR">A. HIS / EMR</label>
+            <label><input type="checkbox" name="dsrc" value="LIS检验">B. LIS 检验</label>
+            <label><input type="checkbox" name="dsrc" value="随访系统">C. 随访系统</label>
+            <label><input type="checkbox" name="dsrc" value="Excel台账">D. Excel 台账</label>
+            <label><input type="checkbox" name="dsrc" value="纸质病历/OCR">E. 纸质病历 / OCR</label>
+            <label><input type="checkbox" name="dsrc" value="多中心汇总">F. 多中心汇总</label>
+            <label><input type="checkbox" name="dsrc" value="其他">G. 其他</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">13</span>是否需要数据提取支持</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="extract" value="不需要">A. 不需要</label>
+            <label><input type="checkbox" name="extract" value="设计提取清单">B. 设计提取清单</label>
+            <label><input type="checkbox" name="extract" value="清洗导出数据">C. 清洗导出数据</label>
+            <label><input type="checkbox" name="extract" value="多系统合并">D. 多系统合并</label>
+            <label><input type="checkbox" name="extract" value="多中心整合">E. 多中心整合</label>
+            <label><input type="checkbox" name="extract" value="OCR/文本结构化">F. OCR / 文本结构化</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">14</span>当前数据形式</div>
+          <div class="opts cols2">
+            <label><input type="radio" name="dataform" value="尚未整理">A. 尚未整理</label>
+            <label><input type="radio" name="dataform" value="Excel较杂乱">B. Excel 较杂乱</label>
+            <label><input type="radio" name="dataform" value="Excel干净规整">C. Excel 干净规整</label>
+            <label><input type="radio" name="dataform" value="电子病历系统导出">D. 电子病历系统导出</label>
+            <label><input type="radio" name="dataform" value="SPSS/CSV/数据库">E. SPSS / CSV / 数据库</label>
+            <label><input type="radio" name="dataform" value="仅字段清单">F. 仅字段清单</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">15</span>数据规模与变量数量</div>
+          <div class="inline-row">
+            <div class="field"><input type="text" name="total_n" placeholder="总例数"></div>
+            <div class="field"><input type="text" name="event_n" placeholder="事件数"></div>
+            <div class="field"><input type="text" name="var_n" placeholder="变量数"></div>
+            <div class="field"><input type="text" name="avail_n" placeholder="可用例数"></div>
+            <div class="field"><input type="text" name="nonevent_n" placeholder="非事件数"></div>
+            <div class="field"><input type="text" name="center_n" placeholder="中心数"></div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">16</span>数据质量已知问题</div>
+          <textarea name="q16" rows="2" placeholder="缺失、重复、异常值、单位不一致、编码不统一、时间点不一致、结局定义不一致、中心间口径不一致等。"></textarea>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">17</span>预纳入变量 / 因素类别</div>
+          <p class="hint">1 人口统计学；2 诊断/病程；3 临床特征；4 实验室/影像；5 量表；6 病史/生活方式/家族史；7 分子/基因；8 治疗及疗效；9 其他。</p>
+          <input type="text" name="q17" placeholder="请填写数字代号及具体变量">
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">18</span>临床价值较高的变量</div>
+          <textarea name="q18" rows="2" placeholder="请说明您认为最重要的变量、可获得时间点、临床使用场景和可解释性要求。"></textarea>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">19</span>数据治理 / EDC 需求</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="gov" value="数据可直接评估">数据可直接评估</label>
+            <label><input type="checkbox" name="gov" value="需清洗/标准化">需清洗 / 标准化</label>
+            <label><input type="checkbox" name="gov" value="需系统性治理">需系统性治理</label>
+            <label><input type="checkbox" name="gov" value="需前瞻性随访EDC">需前瞻性随访 EDC</label>
+            <label><input type="checkbox" name="gov" value="需多中心统一采集">需多中心统一采集</label>
+            <label><input type="checkbox" name="gov" value="待评估">待评估</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">20</span>特殊系统开发需求</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="dev" value="无">无</label>
+            <label><input type="checkbox" name="dev" value="公众号/小程序入口">公众号 / 小程序入口</label>
+            <label><input type="checkbox" name="dev" value="特定导出格式">特定导出格式</label>
+            <label><input type="checkbox" name="dev" value="图表/报表展示">图表 / 报表展示</label>
+            <label><input type="checkbox" name="dev" value="API/系统对接">API / 系统对接</label>
+            <label><input type="checkbox" name="dev" value="权限/多中心隔离">权限 / 多中心隔离</label>
+            <label><input type="checkbox" name="dev" value="OCR/文本结构化">OCR / 文本结构化</label>
+            <label><input type="checkbox" name="dev" value="其他">其他</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 五、建模方案与方法偏好 -->
+      <div class="asm-sec reveal">
+        <h3><span class="idx">五</span>建模方案与方法偏好</h3>
+        <div class="q">
+          <div class="qlabel"><span class="qn">21</span>建模目的（可多选）</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="mgoal" value="A">A. 风险因素筛选</label>
+            <label><input type="checkbox" name="mgoal" value="B">B. 疾病发生风险预测</label>
+            <label><input type="checkbox" name="mgoal" value="C">C. 预后 / 生存预测</label>
+            <label><input type="checkbox" name="mgoal" value="D">D. 复发 / 并发症预测</label>
+            <label><input type="checkbox" name="mgoal" value="E">E. 模型外部验证</label>
+            <label><input type="checkbox" name="mgoal" value="F">F. 模型更新 / 优化</label>
+            <label><input type="checkbox" name="mgoal" value="G">G. 其他</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">22</span>预想统计 / 建模方法</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="method" value="A">A. 描述 / 组间比较</label>
+            <label><input type="checkbox" name="method" value="B">B. Logistic / Cox / 线性回归</label>
+            <label><input type="checkbox" name="method" value="C">C. 生存分析</label>
+            <label><input type="checkbox" name="method" value="D">D. 倾向评分</label>
+            <label><input type="checkbox" name="method" value="E">E. 亚组 / 交互</label>
+            <label><input type="checkbox" name="method" value="F">F. 敏感性分析</label>
+            <label><input type="checkbox" name="method" value="G">G. 机器学习</label>
+            <label><input type="checkbox" name="method" value="H">H. 其他</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">23</span>既有模型或文献依据</div>
+          <textarea name="q23" rows="2" placeholder="如有既有模型、评分量表、外部验证数据、参考文献或既往文章，请提供名称、版本和资料。"></textarea>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">24</span>验证与落地要求</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="valid" value="内部验证">内部验证</label>
+            <label><input type="checkbox" name="valid" value="时间外验证">时间外验证</label>
+            <label><input type="checkbox" name="valid" value="外部验证">外部验证</label>
+            <label><input type="checkbox" name="valid" value="校准">校准</label>
+            <label><input type="checkbox" name="valid" value="决策曲线">决策曲线</label>
+            <label><input type="checkbox" name="valid" value="列线图">列线图</label>
+            <label><input type="checkbox" name="valid" value="在线计算器/APP">在线计算器 / APP</label>
+            <label><input type="checkbox" name="valid" value="其他">其他</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">25</span>同批数据的复用方向</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="reuse" value="疗效">疗效</label>
+            <label><input type="checkbox" name="reuse" value="安全性">安全性</label>
+            <label><input type="checkbox" name="reuse" value="药物经济学">药物经济学</label>
+            <label><input type="checkbox" name="reuse" value="预后/生存">预后 / 生存</label>
+            <label><input type="checkbox" name="reuse" value="风险预测">风险预测</label>
+            <label><input type="checkbox" name="reuse" value="文章/成果支持">文章 / 成果支持</label>
+            <label><input type="checkbox" name="reuse" value="其他">其他</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 六、交付物与合作方式 -->
+      <div class="asm-sec reveal">
+        <h3><span class="idx">六</span>交付物与合作方式</h3>
+        <div class="q">
+          <div class="qlabel"><span class="qn">26</span>期望交付物（可多选）</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="delivery" value="A">A. 统计分析报告</label>
+            <label><input type="checkbox" name="delivery" value="B">B. 预测模型 / 列线图</label>
+            <label><input type="checkbox" name="delivery" value="C">C. 模型在线计算器</label>
+            <label><input type="checkbox" name="delivery" value="D">D. 论文初稿 / 结果部分</label>
+            <label><input type="checkbox" name="delivery" value="E">E. 投稿协助</label>
+            <label><input type="checkbox" name="delivery" value="F">F. 研究方案 / 数据治理 / EDC</label>
+            <label><input type="checkbox" name="delivery" value="G">G. 其他</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">27</span>其他成果形式</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="outcome" value="A">A. 专利</label>
+            <label><input type="checkbox" name="outcome" value="B">B. 计算器类在线应用/App并登记软著</label>
+            <label><input type="checkbox" name="outcome" value="C">C. 在线应用/App但不登记软著</label>
+            <label><input type="checkbox" name="outcome" value="D">D. 不需要</label>
+            <label><input type="checkbox" name="outcome" value="E">E. 其他</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">28</span>需要配套的前置服务</div>
+          <div class="opts cols2">
+            <label><input type="checkbox" name="preset" value="研究问题梳理/方案设计">研究问题梳理 / 方案设计</label>
+            <label><input type="checkbox" name="preset" value="数据治理">数据治理</label>
+            <label><input type="checkbox" name="preset" value="EDC/专病库搭建">EDC / 专病库搭建</label>
+            <label><input type="checkbox" name="preset" value="多中心数据标准">多中心数据标准</label>
+            <label><input type="checkbox" name="preset" value="统计分析/编程">统计分析 / 编程</label>
+            <label><input type="checkbox" name="preset" value="文章/审稿回复支持">文章 / 审稿回复支持</label>
+            <label><input type="checkbox" name="preset" value="暂不确定">暂不确定</label>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qlabel"><span class="qn">29</span>其他要求或补充说明</div>
+          <textarea name="q29" rows="2" placeholder="可提供前期成果、申报项目背景、既往模型/数据字典或其他需要说明的事项。"></textarea>
+        </div>
+      </div>
+
+      <div class="asm-intro reveal">
+        <p><b>报价与合作边界：</b>数据治理原则上采用「评估表 + 标准总价」的方式，不按单例拆分；如需 EDC，通常区分搭建费与维护费，首次搭建通常包含三年使用期，具体以实际工作量、系统需求和合同约定为准。</p>
+        <p><b>合规与结果边界：</b>本表用于售前初步评估，不构成模型性能、研究结论、发表或录用结果承诺；不做分值承诺，最终以客户实际研究、数据质量、项目执行及实际录用结果为准。</p>
+      </div>
+
+      <div class="asm-actions reveal">
+        <button type="submit" class="btn btn-primary">提交需求评估表</button>
+        <button type="button" class="btn btn-ghost" id="printBtn">打印 / 保存为 PDF</button>
+        <span class="mini">提交即表示同意我们就该项目与您联系，信息严格保密。</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">梅斯医学</div>
+        <p>数据管理与统计分析部，专注临床研究数据管理与生物统计，为药企、器械企业与研究者提供规范、专业、快捷、安全的数统全程服务。</p>
+      </div>
+      <div class="footer-links">
+        <h4>快速导航</h4>
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我们</a>
+        <a href="services.html">产品服务</a>
+        <a href="assessment.html">需求调研</a>
+        <a href="contact.html">联系我们</a>
+      </div>
+      <div class="footer-links">
+        <h4>核心服务</h4>
+        <a href="services.html#programming">统计编程</a>
+        <a href="services.html#dm">数据管理</a>
+        <a href="services.html#biostat">生物统计</a>
+        <a href="services.html#predict">疾病风险预测模型</a>
+        <a href="services.html#specialty">专病库服务</a>
+        <a href="services.html#value">增值服务</a>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul class="footer-contact">
+          <li>咨询热线：[请填写电话]</li>
+          <li>微信咨询：[请填写微信号]</li>
+          <li>邮箱：[请填写邮箱地址]</li>
+          <li>地址：[请填写公司地址]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 梅斯医学 · 数据管理与统计分析部</span>
+      <span>遵从 ICH · GCP · GCDMP · CDISC · NMPA 标准</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

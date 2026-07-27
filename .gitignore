@@ -1,0 +1,12 @@
+# WorkBuddy 项目工具数据（非网站内容，不纳入版本库）
+.workbuddy/
+
+# Python 临时/缓存
+__pycache__/
+*.pyc
+/tmp/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+*.swp
