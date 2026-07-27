@@ -96,6 +96,9 @@ h1,h2,h3,h4 { color: var(--navy); font-weight: 700; line-height: 1.25; letter-sp
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 .nav-links a.active { color: var(--navy); }
 .nav-cta { margin-left: 8px; }
+/* 防止 .nav-links a 的优先级覆盖按钮自身的文字色/内边距/下划线 */
+.nav-links a.nav-cta { color: #fff; padding: 13px 26px; border-radius: 999px; }
+.nav-links a.nav-cta::after { display: none; }
 
 .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer; padding: 8px; }
 .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: .3s; }
